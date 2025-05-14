@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  workspace:
+    image: mcr.microsoft.com/vscode/devcontainers/typescript-node:0-20
+    volumes:
+      - ..:/workspace:cached
+    working_dir: /workspace
+    command: sleep infinity
+
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    volumes:
+      - ../backend:/workspace/backend:cached
+    working_dir: /workspace/backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/mydb
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ../frontend:/workspace/frontend:cached
+    working_dir: /workspace/frontend
+    ports:
+      - "3000:3000"
+
+  mongo:
+    image: mongo:6.0
+    restart: always
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongo-data:
