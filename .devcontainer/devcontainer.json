@@ -23,9 +23,7 @@
         "ms-azuretools.vscode-docker"
       ],
       "settings": {
-        // → Passe au nouveau namespace “dev.containers”
-        
-        "dev.containers.mountWaylandSocket": false
+           "dev.containers.mountWaylandSocket": false
       }
     }
   }
