@@ -1,0 +1,27 @@
+{
+  "name": "MERN Dev Container",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "workspace",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "donjayamanne.git-extension-pack",
+        "humao.rest-client",
+        "mikestead.dotenv",
+        "formulahendry.auto-close-tag",
+        "wayou.vscode-todo-highlight",
+        "streetsidesoftware.code-spell-checker",
+        "ritwickdey.LiveServer",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+           "dev.containers.mountWaylandSocket": false
+      }
+    }
+  }
+}
