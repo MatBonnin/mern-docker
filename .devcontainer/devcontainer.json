@@ -7,9 +7,20 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "ms-azuretools.vscode-docker"
+        "dsznajder.es7-react-js-snippets",       // React/Redux/GraphQL/JS snippets :contentReference[oaicite:0]{index=0}
+        "dbaeumer.vscode-eslint",                // Intégration ESLint en temps réel :contentReference[oaicite:1]{index=1}
+        "esbenp.prettier-vscode",                // Prettier – Code formatter :contentReference[oaicite:2]{index=2}
+        "donjayamanne.git-extension-pack",       // Git Extension Pack (Git History, Project Manager…) :contentReference[oaicite:4]{index=4}
+        "mongodb.mongodb-vscode",                // MongoDB for VS Code – explorer MongoDB/Atlas :contentReference[oaicite:5]{index=5}
+        "christian-kohler.npm-intellisense",     // Auto-complétion des modules npm :contentReference[oaicite:6]{index=6}
+        "christian-kohler.path-intellisense",    // Auto-complétion des chemins :contentReference[oaicite:7]{index=7}
+        "humao.rest-client",                     // Tester des API REST directement :contentReference[oaicite:8]{index=8}
+        "mikestead.dotenv",                      // Syntaxe et validation des `.env` :contentReference[oaicite:9]{index=9}
+        "formulahendry.auto-close-tag",          // Fermeture automatique des balises JSX/HTML :contentReference[oaicite:10]{index=10}
+        "wayou.vscode-todo-highlight",           // Met en évidence TODO/FIXME :contentReference[oaicite:11]{index=11}
+        "streetsidesoftware.code-spell-checker", // Vérification orthographique du code :contentReference[oaicite:12]{index=12}
+        "ritwickdey.LiveServer",                 // Serveur local avec live-reload :contentReference[oaicite:13]{index=13}
+        "ms-azuretools.vscode-docker"            // Gestion Docker intégrée :contentReference[oaicite:14]{index=14}
       ]
     },
       "settings": {
